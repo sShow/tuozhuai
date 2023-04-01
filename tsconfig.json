@@ -1,0 +1,25 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "components.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "lib": [ "es2016", "dom", "es2018", "es2018.promise"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@editor/*": ["./src/editor/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@views/*": ["./src/views/*"],
+      "@router/*": ["./src/router/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@styles/*": ["./src/styles/*"],
+    },
+    "types": ["bkui-vue/lib/volar.components"]
+  },
+
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}

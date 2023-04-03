@@ -13,8 +13,7 @@
       "@router/*": ["./src/router/*"],
       "@utils/*": ["./src/utils/*"],
       "@styles/*": ["./src/styles/*"],
-    },
-    "types": ["bkui-vue/lib/volar.components"]
+    }
   },
 
   "references": [
